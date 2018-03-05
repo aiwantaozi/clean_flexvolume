@@ -1,0 +1,6 @@
+package: github.com/rancher/clean_flexvolume
+import:
+- package: github.com/Sirupsen/logrus
+  version: v0.10.0
+- package: github.com/urfave/cli
+  version: v1.18.0

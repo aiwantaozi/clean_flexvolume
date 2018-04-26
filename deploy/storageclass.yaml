@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1beta1
+kind: StorageClass
+metadata:
+  name: localflex
+provisioner: rancher.io/local-flexvolume
+parameters:
+  clusterName: "myClusterName"
+  projectName: "myprojectName"
+  workloadName: "myworkloadName"
+  containerName: "mycontainerName"
+  format: "nginx"
+  podID: "mypodid"

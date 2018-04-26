@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: d-bp1au6l6mbscl64apz0n
+spec:
+  capacity:
+    storage: 20Mi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: slow
+  flexVolume:
+    driver: "k8s/lvm"
+    fsType: "ext4"
+    options:
+      volumeId: "d-bp1au6l6mbscl64apz0n" 
